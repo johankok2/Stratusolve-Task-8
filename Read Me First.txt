@@ -1,0 +1,32 @@
+
+IMPORTANT NOTIFICATION:
+
+Create a Database with name "stratusolvetask8" in phpMyAdmin by using the following Query:
+
+CREATE DATABASE IF NOT EXISTS `stratusolvetask8` 
+
+and create also the following two (2) Tables in phpMyAdmin by using the below 2 SQL queries:
+
+Table 1:
+
+CREATE TABLE IF NOT EXISTS stratusolvetask8.`users` (
+      `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+      `fname` varchar(200) DEFAULT NULL,
+      `lname` varchar(200) DEFAULT NULL,
+      `username` varchar(200) DEFAULT NULL UNIQUE,
+      `email` varchar(300) DEFAULT NULL UNIQUE,
+      `password` varchar(200) DEFAULT NULL,
+      `date` date NOT NULL); 
+
+Table 2:
+
+CREATE TABLE IF NOT EXISTS stratusolvetask8.`posts` (
+      `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+      `userid` int(11)NOT NULL,
+      `post_text` varchar(2000) DEFAULT NULL,
+      `post_time_stamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+       ON UPDATE CURRENT_TIMESTAMP NOT NULL,
+       FOREIGN KEY (userid) REFERENCES `users`(id)); 
+
+Alternatively, importing attached sql-file (`stratusolvetask8.sql`) into phpMyAdmin to create the 
+database as well as the two tables.

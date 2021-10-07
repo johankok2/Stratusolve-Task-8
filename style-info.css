@@ -1,0 +1,72 @@
+
+/*
+  ============================================================
+                       CSS for Stratusolve Information-Form : (information.php)
+  ============================================================
+*/
+
+body { 
+	font-size: 14px;
+	font-family:  calibri, arial, sans-serif;
+	background-color:#e5dfd3; 
+	padding-top:5px;
+}
+
+h1 { 
+	text-align: center;
+	text-transform: Uppercase;
+	font-family:georgia, times, serif;
+	font-style: Normal;
+	font-size:35px;
+	letter-spacing:1.4px;
+}
+
+p.normal {
+	margin-bottom:5px;
+	text-align: center;  /*justify*/
+	font-style: Italic;
+	color: #86592d;
+	font-family:  calibri, arial, sans-serif;
+	padding: 0 30px 0 30px;
+	font-size:15px;
+}
+
+a {
+	color: blue; 
+	font-weight:bold;
+	text-decoration: none;
+}
+	
+.content { 
+	width:600px;
+	height:680px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px; 
+	border: 3px solid brown; 
+	margin:0 auto;
+	padding: 5px 15px 5px 15px;	
+	background-color:#f4efe6; 
+}
+
+.info-1 {
+  width:550px;
+  height:185px;
+  background-color: #ffd9b3; 
+  color: #734d26; 
+  border-radius: 10px; 
+  border: 2px solid brown;
+  margin: 0 auto;
+  padding: 5px;
+}
+.info-2 {
+  width:550px;
+  height:270px;
+  background-color:#ffd9b3;
+  color: #734d26; 
+  border-radius: 10px; 
+  border: 2px solid brown;
+  margin: 0 auto;
+  padding: 5px;
+}
+
